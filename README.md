@@ -3,6 +3,8 @@ Repository for Zendesk Coding Challenge - June 2019
 # About the Project
 Developed by: Abhishek Pahuja
 
+Application Type: Console Application
+
 Email ID: abhishekpahuja@hotmail.com
 
 Date: 5 June 2019
