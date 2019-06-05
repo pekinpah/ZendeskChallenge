@@ -29,4 +29,3 @@ python Zendesk_Challenge_Main.py
 ```
 
 2. Follow the menu prompts.
-
