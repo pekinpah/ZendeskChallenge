@@ -25,7 +25,12 @@ Download Here: [Python Docs](https://www.python.org/downloads/release/python-373
 
 1. Install python 3.7.3 (or above) and add python to path
 
-2. Install the requests package using pip3
+2. To update/upgrade pip type
+```bash
+python -m pip install --upgrade pip
+```
+
+3. Install the requests package using pip3
 ```bash
 pip3 install requests
 ```
