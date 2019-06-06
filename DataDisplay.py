@@ -47,7 +47,7 @@ def DisplaySelected(DataArray):
     # While loop to limit number of attempts
     while counter < 3:
         option = input("Total tickets: " + str(itemCounter) +
-                       "\nPlease enter the ticket ticket to be searched: ")
+                       "\nPlease enter the ticket ID/number to be searched: ")
         # Try block to catch input type mismatch
         try:
             choice = int(option)
