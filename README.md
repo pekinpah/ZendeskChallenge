@@ -36,3 +36,8 @@ python Zendesk_Challenge_Main.py
 ```
 
 2. Follow the menu prompts.
+
+## Tests
+The code worked without any changes, however, there were type mismatch errors when non-numeric values were entered where numeric input was required. Try-except conditions were used to remove that error.
+
+The program was tested for a test account using both the input methods. However, this program fetches 100 requests per page instead of 25 (as mentioned in the requirements sheet). Therefore, pagination is coded to handle 100 tickets per page instead of 25.
