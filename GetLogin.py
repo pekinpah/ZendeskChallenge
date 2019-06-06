@@ -84,6 +84,9 @@ def Login():
                     PageCount += 1
             # Set counter to 4 to break while loop
             counter = 4
+            # display a message if no tickets were found
+            if total_records == 0:
+                print('this account has zero tickets. requsting tickets dislay will result in blank output')
             # Return the ticket data
             return DataArray
 
@@ -137,5 +140,8 @@ def AutoLogin():
                     recordcounter += 1
                 # Increment to next page
                 PageCount += 1
+        # display a message if no tickets were found
+            if total_records == 0:
+                print('this account has zero tickets. requsting tickets dislay will result in blank output')
         # Return the collected tickets
         return DataArray
