@@ -19,7 +19,8 @@ from getpass import getpass
 import base64
 # Import invalid attempts method to check if user has exceeded number of permitted attempts
 from AttemptsExceeded import InvalidAttempts
-
+# import the ErrorCodes method from ErrorCodes.py
+from ErrorCodes import ErrorCodes
 
 # Login method to allow user to log into their account and domain
 def Login():
@@ -43,10 +44,11 @@ def Login():
         response = session.get(url)
         # Check if the response was received
         if response.status_code != 200:
-            print('Either the link or credentials are invalid.'
-                  '\nServer responded with error code: {}'.format(response.status_code))
-            # Sleep for 2 seconds before clearing screen
-            sleep(2)
+            # Call the error code method from errorCode.py
+            ErrorCodes(response.status_code)
+            # Sleep for 5 seconds before clearing screen
+            sleep(5)
+            clear()
             # Increment the counter
             counter += 1
             clear()
@@ -106,10 +108,10 @@ def AutoLogin():
     url = zendesk + '1'
     response = session.get(url)
     if response.status_code != 200:
-        print('Either the link or credentials are invalid.'
-              '\nServer responded with error code: {}'.format(response.status_code))
-        # Sleep for 2 seconds before clearing screen
-        sleep(2)
+        # Call the error code method from errorCode.py
+        ErrorCodes(response.status_code)
+        # Sleep for 5 seconds before clearing screen
+        sleep(5)
         clear()
     else:
         clear()
